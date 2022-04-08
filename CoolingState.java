@@ -22,7 +22,7 @@ public class CoolingState extends Operating{
         if(centralSystem.getTemp() >= 23){
             centralSystem.setDeHumidifier("on");
         }
-        System.out.println("cooling: new temp "+centralSystem.temp+" and dehumidifier is "+getDehumidifier());
+        System.out.println("cooling: new temp is "+centralSystem.temp+" and dehumidifier is "+getDehumidifier());
     }
 
     @Override
@@ -31,7 +31,7 @@ public class CoolingState extends Operating{
         if(centralSystem.getTemp() <= 22){
             centralSystem.setDeHumidifier("off");
         }
-        System.out.println("cooling: new temp "+centralSystem.temp+" and dehumidifier is "+getDehumidifier());
+        System.out.println("cooling: new temp is "+centralSystem.temp+" and dehumidifier is "+getDehumidifier());
     }
 
     public String getDehumidifier() {

@@ -23,7 +23,7 @@ public class HeatingState extends Operating{
         if(centralSystem.getTemp() >= 22){
             centralSystem.setHumidifier("on");
         }
-        System.out.println("heating: new temp "+centralSystem.temp+" and humidifier is "+getHumidifier());
+        System.out.println("heating: new temp is "+centralSystem.temp+" and humidifier is "+getHumidifier());
     }
 
     @Override
@@ -32,7 +32,7 @@ public class HeatingState extends Operating{
         if(centralSystem.getTemp() <= 21){
             centralSystem.setHumidifier("off");
         }
-        System.out.println("heating: new temp "+centralSystem.temp+" and humidifier is "+getHumidifier());
+        System.out.println("heating: new temp is "+centralSystem.temp+" and humidifier is "+getHumidifier());
     }
 
     public String getHumidifier() {
